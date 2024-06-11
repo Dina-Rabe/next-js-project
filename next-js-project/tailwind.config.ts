@@ -13,8 +13,14 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        'Sand-Dollar': '#EBE7D0',
+        'Tangerine': '#D3A550',
+        'Black': '#121110',
+        'Red': '#A00D0D',
+        },
+      },
     },
-  },
   plugins: [],
 };
 export default config;
