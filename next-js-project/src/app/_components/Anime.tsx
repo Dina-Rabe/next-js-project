@@ -12,7 +12,7 @@ const Anime = ({ id }:{id:string}) => {
         const response = await fetch(`https://myanimelist.p.rapidapi.com/anime/${id}`, {
           headers: {
             'x-rapidapi-host': 'myanimelist.p.rapidapi.com',
-            'x-rapidapi-key': 'd551b82177msh620e24e00b96810p18500fjsnd671745e3359',
+            'x-rapidapi-key': 'eee4687985mshf5ddc741af3285cp100c2ajsnf64ba57afc6c',
           },
         });
         const data = await response.json();
@@ -30,7 +30,10 @@ const Anime = ({ id }:{id:string}) => {
   }else {
     return (
         <div className="anime-container">
-            <div className="anime-header">
+            
+            {animeData.title_ov ? (
+                <div>
+                <div className="anime-header">
                 <h2>{animeData.title_en}</h2>
                 <h3>{animeData.title_ov}</h3>
             </div>
@@ -46,16 +49,21 @@ const Anime = ({ id }:{id:string}) => {
                 <h3>Details</h3>
                 </div>
             </div>
-            <div className="anime-statistics">
-                <h3>Statistics</h3>
-                <ul>
-                <li>Score: {animeData.statistics.score}/10</li>
-                <li>Rank: {animeData.statistics.ranked}</li>
-                <li>Popularity: {animeData.statistics.popularity}</li>
-                <li>Members: {animeData.statistics.members}</li>
-                <li>Favorites: {animeData.statistics.favorites}</li>
-                </ul>
-            </div>
+
+                <div className="anime-statistics">
+                    <h3>Statistics</h3>
+                    <ul>
+                    <li>Score: {animeData.statistics.score}/10</li>
+                    <li>Rank: {animeData.statistics.ranked}</li>
+                    <li>Popularity: {animeData.statistics.popularity}</li>
+                    <li>Members: {animeData.statistics.members}</li>
+                    <li>Favorites: {animeData.statistics.favorites}</li>
+                    </ul>
+                </div>
+                </div>) : (
+                    <h1>AnimeID doesn't exist!</h1>
+                )
+            }
             
             </div>
       );
