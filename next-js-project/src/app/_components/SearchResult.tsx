@@ -82,7 +82,7 @@ const SearchResult = ({ q }:{q:string}) => {
 
   return (
     <div>
-        <h3 className="text-Tangerine font-bold mb-4 text-center">Anime Search Results for "{q}"</h3>
+        <h3 className="text-Tangerine font-bold mb-4 text-center">Anime Search Results for {q}</h3>
         <div className="flex flex-wrap justify-center pr-2 pl-2 w-full">
             {animeData?.map((item, index) => (
                 <div

@@ -63,7 +63,7 @@ const Anime = ({ id }:{id:string}) => {
               </div>
             
         ) : (
-                    <h1>AnimeID doesn't exist!</h1>
+                    <h1>AnimeID doesn&apos;t exist!</h1>
                 )
             }
             
