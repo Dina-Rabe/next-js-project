@@ -10,7 +10,7 @@ export default function NotFoundPage() {
           </a>
         </div>
         <h1 className="text-3xl font-bold text-Tangerine mb-4">This page doesn't exist.</h1>
-        <p className="text-Black mb-6">Want to explore more? Meet me  
+        <p className="text-Sand-Dollar mb-6">Want to explore more? Meet me  
             <a
             href="https://github.com/Dina-Rabe"
             className="inline-block bg-Tangerine hover:bg-Tangerine text-white font-bold py-2 px-4 rounded transition-colors"

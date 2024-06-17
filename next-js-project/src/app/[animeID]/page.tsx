@@ -6,9 +6,13 @@ export default function GetAnime(
 
 ){
     return (
-        <div>
-            <h1>Anime {params.animeID}</h1>
-            <Anime id={params.animeID}></Anime>
-        </div>
+        <>
+            <div className="bg-Black w-full justify-center">
+                <h1 className="text-Tangerine text-4xl font-bold mb-4 flex justify-center"> Anime {params.animeID}</h1>
+                <Anime id={params.animeID}></Anime>
+            </div>
+                
+        </>
+        
     )
 }
